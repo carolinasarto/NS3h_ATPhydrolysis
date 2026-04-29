@@ -1,0 +1,15 @@
+term
+&cntrl
+imin=0,
+ntx=1,irest=0,
+ntwr=200, ntpr=100, ntwx=100, ntwv=0, ntwe=0, iwrap=0, ioutfm=1, ntxo=1,
+ibelly = 1,
+bellymask='!:21,106&!@CA,C,N,O,H,HA&!:595,596,854-856,440&!@7064-7079'
+nstlim=5000, dt=0.001, nrespa=1,
+ntt=3, tempi=0.0, temp0=100.0, gamma_ln=5.0, ig=-1,
+ntp=0, pres0=1.0, taup=1.0,
+ntc=1,
+ntf=1, ntb=1, cut=10.0, igb=0,
+/
+
+

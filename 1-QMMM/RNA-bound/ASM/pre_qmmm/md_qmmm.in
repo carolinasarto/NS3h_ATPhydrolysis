@@ -1,0 +1,22 @@
+MD QM/MM T cte
+&cntrl
+imin=0,
+ntx=1,irest=0,
+ntwr=1000, ntpr=1000, ntwx=1000, ntwv=0, ntwe=0, iwrap=0, ioutfm=1, ntxo=1,
+nstlim=50000, dt=0.001, nrespa=1,
+ntt=3, tempi=300.0, temp0=300.0, gamma_ln=5.0, ig=-1,
+ntp=0, pres0=1.0, taup=1.0,
+ntc=2, ntf=2, ntb=1, cut=10.0, ifqnt=1, igb=0,
+/
+&qmmm
+qmmask=':21,106&!@CA,C,N,O,H,HA|:595,596,854-856,440|@7064-7079',
+qmcharge=-3,
+qm_theory='DFTB3'
+qmshake=0,
+qm_ewald=1, qm_pme=1,
+qmcut=15.0
+writepdb=1,
+printcharges=1,
+dftb_telec=100,
+itrmax=2000,
+/

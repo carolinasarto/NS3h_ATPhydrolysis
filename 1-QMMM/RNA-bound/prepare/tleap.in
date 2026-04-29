@@ -1,0 +1,21 @@
+source leaprc.protein.ff14SB #Source leaprc file for ff14SB protein force field
+source leaprc.water.tip3p #Source leaprc file for TIP3P water model (Aca carga los iones tambien)
+source leaprc.RNA.ROC
+#source leaprc.RNA.Shaw 
+loadamberprep ~/ns3/params/ATP.prep
+loadamberparams ~/ns3/params/ATP.frcmod
+loadOff /home/usuario/Programas/anaconda3/pkgs/ambertools-22.0-py310h206695f_3/dat/leap/lib/atomic_ions.lib
+loadamberparams /home/usuario/Programas/anaconda3/pkgs/ambertools-22.0-py310h206695f_3/dat/leap/parm/frcmod.ionsjc_tip3p
+
+
+p = loadpdb paratleap.pdb
+
+solvateOct p TIP3PBOX 8.0
+
+addions2 p Cl- 27
+addions2 p Na+ 33
+
+saveamberparm p x.prmtop x.rst7
+savepdb p x.pdb
+quit
+

@@ -1,0 +1,3 @@
+reactants.rst and products.rst come from the pre_qmmm trajectories
+parameters.prmtop is the same file as xD.prmtop from pre_qmmm
+Values from guess file were determined by NEB images

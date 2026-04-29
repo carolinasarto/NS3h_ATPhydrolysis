@@ -1,0 +1,8 @@
+# Log started on 03/18/2025 [mm/dd/yyyy] at 17:11:59
+parm x.prmtop
+change MASS (:21,106&!@CA,C,N,O,H,HA|:595,596,854-856,440|@7064-7079)&@H= 2.01600000E+00
+outparm xD.prmtop
+run
+exit
+quit
+

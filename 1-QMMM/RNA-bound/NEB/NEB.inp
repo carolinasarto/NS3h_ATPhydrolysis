@@ -1,0 +1,24 @@
+%pal nprocs 12 end
+%MaxCore 400
+%geom
+ MaxIter 1000
+end
+*pdbfile -3 1 R.pdb
+!NEB-TS B3LYP 6-31+G*
+%neb
+ Product_PDBFile "P.pdb"
+ interpolation IDPP
+ NImages 13
+ PreOpt True
+ Opt_Method LBFGS
+ MaxIter 1000
+end
+!QM/MM 
+%mm
+ ORCAFFFilename "x.ORCAFF.prms"
+end
+%qmmm
+  QMAtoms {340:347 1745:1753 7062:7078 8427:8435 7653:7655 7650:7652} end
+  ActiveAtoms {327:333 340:347 1745:1753 3743:3747 4391:4398 4466:4477 4516:4527 7062:7078 8427:8435 7653:7655 7650:7652} end
+end
+

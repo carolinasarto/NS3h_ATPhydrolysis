@@ -1,0 +1,21 @@
+4
+$COLVAR
+COLVAR_type = "BOND"
+atoms = 7656,  1754     !H_Oglu
+$END
+
+$COLVAR
+COLVAR_type = "BOND"
+atoms = 7068, 7065      !Oatp_P
+$END
+
+$COLVAR
+COLVAR_type = "BOND"
+atoms = 7654, 7656      !Owat_H
+$END
+
+$COLVAR
+COLVAR_type = "BOND"
+atoms = 7065, 7654      !P_Owat
+$END
+

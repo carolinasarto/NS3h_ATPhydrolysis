@@ -1,0 +1,10 @@
+Minimization
+&cntrl
+imin=1, maxcyc=3000, 	!Invoke minimizazion
+ntb=1, 			!Periodic boundary conditions
+ntmin=1, ncyc=1000,	!Switch SD to CG (more efficient) after ncyc 
+cut = 10,		!Nonbonded cutoff
+ibelly = 1
+bellymask='!:21,106&!@CA,C,N,O,H,HA&!:595,596,854-856,440&!@7064-7079'
+/
+
