@@ -1,0 +1,32 @@
+parm ../x.prmtop
+
+for i=1;i<=3;i++
+	for j=2;j<=10;j++
+		trajin ../rep$i/md$j.nc
+	done
+done
+
+strip :WAT
+strip :Cl-
+strip :Na+
+
+center :1-457
+image center familiar
+
+rms :1-457@CA,C,O,N
+
+cluster c1 \
+# kmeans clusters 2 randompoint maxit 500 \
+#   rms :442-457&!@H= \
+   hieragglo epsilon 5.0 clusters 2 averagelinkage \
+   rms :442-457@P,O5,O3,C3,C4,C5 \
+   sieve 10 random \
+  out cnumvtime.dat \
+  summary summary.dat \
+  info info.dat \
+  cpopvtime cpopvtime.agr normframe \
+  repout rep repfmt pdb \
+  singlerepout singlerep.nc singlerepfmt netcdf \
+  avgout avg avgfmt pdb
+ run
+

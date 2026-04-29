@@ -1,0 +1,14 @@
+# 10/14/24 20:41:33
+parm ../x.prmtop
+trajin list0.nc
+trajin list3.nc
+trajout 5endup.nc netcdf
+run
+exit
+# 10/14/24 20:43:02
+parm ../x.prmtop
+trajin list1.nc
+trajin list2.nc
+trajout 5endDown.nc netcdf
+run
+exit

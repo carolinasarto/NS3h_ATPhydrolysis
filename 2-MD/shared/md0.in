@@ -1,0 +1,17 @@
+50ns NVT 2fs timestep
+ &cntrl
+  imin = 0, irest = 0, ntx = 1,
+  ntb = 1,
+  cut = 10.0, iwrap=1,
+  ntc = 2, ntf = 2, 				!Shape
+  ntt = 3, gamma_ln = 1.0,
+  nstlim = 25000000, dt = 0.002,
+  tempi = 300.0, temp0 = 300.0,
+  iwrap = 1,
+  ntpr = 50000, ntwx = 50000, ntwr = 1000,
+  ig=-1,ioutfm=1,
+
+ nmropt=0,
+
+ &end
+
