@@ -1,4 +1,4 @@
-# Beyond the catalytic base: RNA’s Role in Modulating ATP Hydrolysis by Dengue Virus NS3 Helicase 
+# Beyond the Catalytic Base: RNA’s Role in Modulating ATP Hydrolysis by Dengue Virus NS3 Helicase 
 
 1-QM/MM: Exploration of minimum free-energy pathways for ATP hydrolysis by DV2 NS3h in its RNA-bound and RNA-free states using a QM/MM description.
 
